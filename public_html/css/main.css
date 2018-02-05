@@ -3,20 +3,133 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+body {
+    background-image: url('images/bg.png') !important;
+}
+.contenido{
+    background: #F6F6F6;
+}
 .navbar-brand{
     padding: 3px 3px;
 }
 .navbar{
     border-radius: 0px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:16px;
 }
-.jumbotron {
-    margin-bottom: 0px;
+.navbar-inverse .navbar-nav>li>a:before{
+    background: #544F83;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{
+    background: #544F83;
+    color: white
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.active>a,  .navbar-inverse .navbar-nav>.active>a:hover{
+    background: #544F83;
+}
+.dropdown-menu>li>a:before{
+    color: white;
 }
 .logo{
     height: 48px;
+    margin-right: 12px;
+}
+.navbar-nav>li>a{
+    line-height: 21px;
+}
+.navbar-fixed-top{
+    border-width: 0 0 0px;
+}
+/*Jumbo*/
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url('images/tx-jumbo.png');
+}
+.juego-destacado-img{
+    text-align: center;
+}
+.juego-destacado-img img{
+    width: 70%;
+}
+.juego-destacado-desc p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size:15px;
+}
+.juego-destacado-desc h2{
+    font-family: 'Titillium Web', sans-serif;
+    margin: 10px 0;
+}
+.juego-destacado-desc h3{
+    font-family: 'Fjalla One', sans-serif;
+    margin: 10px 0;
+}
+.juego-destacado-desc h3 span{
+    font-size:31px;
+    font-style: italic;
+}
+.button-gf{
+    padding: 10px 15px;
+    border: 2px solid #544F83;
+    background: #fff;
+    color:#544F83;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s
+}
+.button-gf:hover{
+    background: #544F83;
+    color:#fff;
+    text-decoration: none;
+    transition: 0.3s
+}
+.lightbox{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+}
+.lightbox:target {
+    outline: none;
+    display: block;
+}
+.lightbox-content {
+    max-height: 80%;
+    width: 50%;
+    margin: 95px auto;
+}
+.video-responsive {
+position: relative;
+padding-bottom: 56.25%; /* 16/9 ratio */
+padding-top: 30px; /* IE6 workaround*/
+height: 0;
+overflow: hidden;
 }
 
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+/*Versiones Moviles*/
+@media (max-width: 768px){
+    .ver-trailer{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .lightbox-content {
+        width: 90%;
+    }
+}
 
 
 
