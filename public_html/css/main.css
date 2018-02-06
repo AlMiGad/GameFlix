@@ -6,6 +6,27 @@
 body {
     background-image: url('images/bg.png') !important;
 }
+.cabecera{
+    background-image: url('images/cabecera.jpg');
+    -webkit-transition: background 1s linear;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 520px;
+    text-align: center;
+    font-family: 'Nova Flat', sans-serif;
+    font-size:42px;
+    color: #fff;
+    padding: 180px 25%;
+}
+
+.cabecera-cont{
+    background-color: rgba(0,0,0, 0.5);
+    padding: 15px 30px;
+}
+.cabecera-cont p{
+    font-family: 'Exo', sans-serif;
+    font-size:22px;
+}
 .contenido{
     background: #F6F6F6;
 }
@@ -16,6 +37,12 @@ body {
     border-radius: 0px;
     font-family: 'Titillium Web', sans-serif;
     font-size:16px;
+    -webkit-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.53);
+    -moz-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.53);
+    box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.53);
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: #fff;
 }
 .navbar-inverse .navbar-nav>li>a:before{
     background: #544F83;
@@ -39,33 +66,6 @@ body {
 }
 .navbar-fixed-top{
     border-width: 0 0 0px;
-}
-/*Jumbo*/
-.jumbotron {
-    margin-bottom: 0px;
-    background-image: url('images/tx-jumbo.png');
-}
-.juego-destacado-img{
-    text-align: center;
-}
-.juego-destacado-img img{
-    width: 70%;
-}
-.juego-destacado-desc p{
-    font-family: 'Titillium Web', sans-serif;
-    font-size:15px;
-}
-.juego-destacado-desc h2{
-    font-family: 'Titillium Web', sans-serif;
-    margin: 10px 0;
-}
-.juego-destacado-desc h3{
-    font-family: 'Fjalla One', sans-serif;
-    margin: 10px 0;
-}
-.juego-destacado-desc h3 span{
-    font-size:31px;
-    font-style: italic;
 }
 .button-gf{
     padding: 10px 15px;
