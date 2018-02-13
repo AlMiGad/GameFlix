@@ -223,7 +223,7 @@ height: 100%;
 /*Versiones Moviles*/
 @media (max-width: 768px){
     .navbar{
-        padding: 0px 0px;
+        padding: 8px 0px;
     }
     .cabecera{
         min-height: 370px;
