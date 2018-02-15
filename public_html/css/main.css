@@ -18,6 +18,9 @@ body {
     background-color: white;
     font-family: 'OpenSans', sans-serif;
 }
+a:hover{
+    text-decoration: none !important;
+}
 .cabecera{
     -webkit-transition: background 1s linear;
     background-size: cover;
@@ -60,7 +63,7 @@ body {
 .navbar-inverse .navbar-nav>li>a:before{
     background: #544F83;
 }
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus, .nav-active{
     background: #544F83;
     color: white
 }
@@ -99,17 +102,20 @@ body {
     left: -10px;
 }
 .button-gf{
+    max-width: 300px;
     padding: 10px 15px;
     border: 2px solid #544F83;
+    font-family: 'Play-Bold', sans-serif;
     background: #fff;
+    color: #544F83;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 19px;
+    margin: 0 auto;
     transition: 0.3s
 }
 .button-gf:hover{
     background: #544F83;
     color:#fff;
-    text-decoration: none;
     transition: 0.3s
 }
 #webTicker > li{
@@ -155,7 +161,7 @@ body {
     font-size: 1.7em;
     color: #fff;
 }
-.novedades{
+.section{
     margin: 30px 0;
     text-align: center;
 }
@@ -180,6 +186,31 @@ body {
 .cont-juego img:hover{
     transform: perspective(300px) rotateY(-12deg);
     transition: 0.3s;
+}
+.item-nov{
+    border: 1px solid #dcdbe6;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.item-nov:hover, .item-active{
+    background-color: #ededf2;
+    transition: 0.5s;
+}
+.item-nov img{
+    width: 100%;
+    margin-top: 5px;
+}
+.item-nov h2{
+    font-family: 'Play-Bold';
+    margin: 5px 0;
+    font-size: 1.6em;
+}
+.item-nov p{
+    margin: 0 0 5px;
 }
 .lightbox{
     display: none;
