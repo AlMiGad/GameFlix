@@ -32,10 +32,26 @@ a:hover{
     color: #fff;
     padding: 261px 25% 210px 25%;
 }
-
+.cabecera-small{
+    background-image: url('../img/cabecera1.jpg');
+    -webkit-transition: background 1s linear;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 270px;
+    text-align: center;
+    font-family: 'Play-Bold', sans-serif;
+    font-size:42px;
+    color: #fff;
+    padding: 106px 25% 39px 25%;
+}
 .cabecera-cont{
     background-color: rgba(0,0,0, 0.5);
     padding: 15px 30px;
+}
+.cabecera-cont img{
+    width: 100%;
+    max-width: 150px;
+    border-radius: 100%;
 }
 .cabecera-cont p{
     font-family: 'Play-Regular', sans-serif;
@@ -76,6 +92,11 @@ a:hover{
 .dropdown-menu>li>a:before{
     color: white;
 }
+.bt-perfil img{
+    margin-top: -9px;
+    height: 37px;
+    border-radius: 100%;
+}
 .logo{
     height: 45px;
     margin-right: 12px;
@@ -101,9 +122,13 @@ a:hover{
 .flotar-carro{
     left: -10px;
 }
+#panel-cuenta, #juegos-comprados, #demos-disponibles, #demos-usadas{
+    text-align: left;
+}
 .button-gf{
     max-width: 300px;
     padding: 10px 15px;
+    cursor: pointer;
     border: 2px solid #544F83;
     font-family: 'Play-Bold', sans-serif;
     background: #fff;
@@ -113,7 +138,7 @@ a:hover{
     margin: 0 auto;
     transition: 0.3s
 }
-.button-gf:hover{
+.button-gf:hover, .gf-active{
     background: #544F83;
     color:#fff;
     transition: 0.3s
@@ -285,14 +310,36 @@ left: 0;
 width: 100%;
 height: 100%;
 }
-
-
+.section-menu h2, #panel-cuenta h2, #juegos-comprados h2, #demos-disponibles h2, #demos-usadas h2{
+    font-family: 'Play-Bold';
+    font-size: 2.3em;
+    margin-top: 0px;
+}
+#juegos-comprados img, #demos-disponibles img, #demos-usadas img{
+    width: 100%;
+    max-width: 150px;
+}
+#demos-disponibles p, #demos-usadas p, #juegos-comprados p{
+    margin-top: 15px;
+}
+.container-datos{
+    margin: 30px 5%;
+    text-align: center;
+}
+.container-datos span{
+    font-size: 20px;
+    display: inherit;
+    margin-bottom: 10px;
+}
+.separator{
+    margin: 30px 0;
+}
 /*Versiones Moviles*/
 @media (max-width: 768px){
     .navbar{
         padding: 8px 0px;
     }
-    .cabecera{
+    .cabecera, .cabecera-small{
         min-height: 370px;
         font-size:32px;
         padding: 161px 5% 110px 5%;
@@ -307,6 +354,9 @@ height: 100%;
     }
     .lightbox-content {
         width: 90%;
+    }
+    #panel-cuenta, #juegos-comprados, #demos-disponibles, #demos-usadas{
+        margin-top:20px;
     }
 }
 
