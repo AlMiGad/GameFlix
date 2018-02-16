@@ -42,7 +42,7 @@ a:hover{
     font-family: 'Play-Bold', sans-serif;
     font-size:42px;
     color: #fff;
-    padding: 100px 25% 39px 25%;
+    padding: 106px 25% 39px 25%;
 }
 .cabecera-cont{
     background-color: rgba(0,0,0, 0.5);
@@ -92,6 +92,11 @@ a:hover{
 .dropdown-menu>li>a:before{
     color: white;
 }
+.bt-perfil img{
+    margin-top: -9px;
+    height: 37px;
+    border-radius: 100%;
+}
 .logo{
     height: 45px;
     margin-right: 12px;
@@ -117,7 +122,7 @@ a:hover{
 .flotar-carro{
     left: -10px;
 }
-.panel-cuenta{
+#panel-cuenta, #juegos-comprados, #demos-disponibles, #demos-usadas{
     text-align: left;
 }
 .button-gf{
@@ -269,10 +274,29 @@ left: 0;
 width: 100%;
 height: 100%;
 }
-.section-menu h2, .panel-cuenta h2{
+.section-menu h2, #panel-cuenta h2, #juegos-comprados h2, #demos-disponibles h2, #demos-usadas h2{
     font-family: 'Play-Bold';
     font-size: 2.3em;
     margin-top: 0px;
+}
+#juegos-comprados img, #demos-disponibles img, #demos-usadas img{
+    width: 100%;
+    max-width: 150px;
+}
+#demos-disponibles p, #demos-usadas p, #juegos-comprados p{
+    margin-top: 15px;
+}
+.container-datos{
+    margin: 30px 5%;
+    text-align: center;
+}
+.container-datos span{
+    font-size: 20px;
+    display: inherit;
+    margin-bottom: 10px;
+}
+.separator{
+    margin: 30px 0;
 }
 /*Versiones Moviles*/
 @media (max-width: 768px){
@@ -294,6 +318,9 @@ height: 100%;
     }
     .lightbox-content {
         width: 90%;
+    }
+    #panel-cuenta, #juegos-comprados, #demos-disponibles, #demos-usadas{
+        margin-top:20px;
     }
 }
 

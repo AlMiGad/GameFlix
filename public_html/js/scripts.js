@@ -7,6 +7,14 @@ $(document).ready(function () {
             scrollTop: $($(this).attr('href')).offset().top - 50
         }, 500, 'linear');
     });
+    //MENU ACCOUNT
+    $('.menu-ac').on('click', function (e) { //Smooth scrolling
+        e.preventDefault();
+        $('.menu-ac').removeClass("gf-active");
+        $(this).addClass("gf-active");
+        $('.panel').hide();
+        $($(this).data("target")).show();
+    });
     //MENU SCROLL
     $('.item-nov').on('click', function (e) { //Smooth scrolling
         e.preventDefault();
