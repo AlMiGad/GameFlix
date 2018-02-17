@@ -24,6 +24,12 @@ $(document).ready(function () {
         $(this).addClass("item-active")
         $('#yt-video').fadeIn(300);
     });
+    //ADD TO CART
+    $('#addCart').on('click', function (e) { //Smooth scrolling
+        e.preventDefault();
+        alert("Se ha añadido al Carrito");
+        $('#itms-nmbr').text("1");
+    });
     //WEB TICKER
     $('#webTicker').webTicker({duplicate: true, height: '40px'});
     //SEARCH

@@ -140,6 +140,7 @@ a:hover{
 .button-gf{
     max-width: 300px;
     padding: 10px 15px;
+    text-align: center;
     cursor: pointer;
     border: 2px solid #544F83;
     font-family: 'Play-Bold', sans-serif;
@@ -235,23 +236,21 @@ a:hover{
     width: 20px;
     height: 20px;
 }
-
-.cont-juego-juego {
-    max-width: 250px;
-    width: 250px;
-    transform: perspective(300px) rotateY(-12deg);
-    transition: 0.3s;
-    margin-top:  100px; 
-    margin-left: 5px;
+.desc-juego{
+    text-align: left;
 }
 
-.cont-juego-juego-cabecera {
-    //max-width: 250px;
-    margin-top:  60px; 
-    margin-left: 30px;
-
+.desc-juego h2{
+    font-family: 'Play-Bold';
+    font-size: 3.0em;
 }
-
+.desc-juego li{
+    display: inline;
+    margin-right: 10px;
+}
+.desc-juego ul{
+    padding-left: 0px;
+}
 .cont-juego h2{
     font-family: 'Play-Bold';
     font-size: 1.3em;
@@ -265,6 +264,9 @@ a:hover{
 .cont-juego img:hover{
     transform: perspective(300px) rotateY(-12deg);
     transition: 0.3s;
+}
+.cabecera-juego{
+    padding:60px 0;
 }
 .item-nov{
     border: 1px solid #dcdbe6;
@@ -398,6 +400,48 @@ height: 100%;
 }
 .juego-busqueda img{
     max-width: 50%;
+}
+.footer{
+    background-color: #000;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+.logo-footer{
+    max-width: 300px;
+    margin-left: -10px;
+}
+.social{
+    width: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.social:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.footer p{
+    font-family: 'Play-Regular';
+    font-size: 1em;
+    margin-top: 5px;
+}
+.footer a{
+    color: #717171;
+    transition: 0.3s;
+}
+.copyR{
+    text-align: left;
+}
+.footer a:hover{
+    color: white;
+    transition: 0.3s;
+}
+.footer li{
+    display: inline;
+    margin-right: 10px;
+}
+.footer ul{
+    padding-left: 0px;
 }
 /*Versiones Moviles*/
 @media (max-width: 768px){
