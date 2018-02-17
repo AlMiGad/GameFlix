@@ -44,9 +44,8 @@ a:hover{
     color: #fff;
     padding: 106px 25% 39px 25%;
 }
-
 .cabecera-small-pantalla-juego{
-    background-color:  rgba(0,0,0, 0.5);
+    background-image: url('../img/cabecera2.jpg');
     background-size: cover;
     background-position: 50% 50%;
     min-height: 270px;
