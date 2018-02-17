@@ -1,188 +1,312 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Holinchi</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/hover.css">
-        <style>
-            body {
-                padding-bottom: 20px;
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"></a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a id="top-juegos-btn" class="btn-nav hvr-underline-reveal" href="#top-juegos">Top Juegos</a></li>
-                        <li><a class="btn-nav hvr-underline-reveal" href="#novedades">Novedades</a></li>
-                        <li><a class="btn-nav hvr-underline-reveal" href="#buscador">Buscador</a></li>
-                    </ul>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Holinchi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <style>
+        body {
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a id="top-juegos-btn" class="btn-nav hvr-underline-reveal" href="#top-juegos">Top Juegos</a></li>
+                <li><a class="btn-nav hvr-underline-reveal" href="#novedades">Novedades</a></li>
+                <li><a class="btn-nav hvr-underline-reveal" href="#buscador">Buscador</a></li>
+            </ul>
 
-                    <div class="icons-right">
-                        <a class="bt-perfil hvr-underline-reveal" href="account.html"><img src="img/user.jpg"></a>
-                        <a class="hvr-underline-reveal" href="#"><span class="glyphicon glyphicon-shopping-cart"></span><span class="flotar-carro badge">0</span></a>
+            <div class="icons-right">
+                <a class="bt-perfil hvr-underline-reveal" href="account.html"><img src="img/user.jpg"></a>
+                <a class="hvr-underline-reveal" href="#"><span class="glyphicon glyphicon-shopping-cart"></span><span
+                        class="flotar-carro badge">0</span></a>
+            </div>
+
+        </div><!--/.navbar-collapse -->
+    </div>
+</nav>
+<div id="cabeId" class="cabecera">
+    <div class="cabecera-cont">
+        Para Vosotros Jugadores
+        <p>- El Portal de Videojuegos -</p>
+    </div>
+</div>
+<div class="noticias">
+    <div class="container">
+        <ul id="webTicker">
+            <li><span class="njuego">Nuevo Juego</span>This List Item will scroll infintely</li>
+            <li><span class="trucos">Truco!</span>And this one will follow it</li>
+            <li><span class="sabias">Sabias Que</span>Finally when it goes out of screen, it will queue again at the end
+            </li>
+        </ul>
+        <div class="noticias-title">
+            Last Minute <span class="glyphicon glyphicon-fire"></span>
+        </div>
+    </div>
+</div>
+
+<div id="top-juegos" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Top Juegos</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-3 cont-juego">
+                <h2>Acción</h2>
+                <p>GTA V</p>
+                <a href="game.html"><img src="img/juegos/gta5.jpg" style="width: 100%; margin-bottom:20px"></a>
+            </div>
+            <div class="col-md-3 cont-juego">
+                <h2>Carreras</h2>
+                <p>Dirt Rally</p>
+                <a href="game.html"><img src="img/juegos/dirt.jpg" style="width: 100%; margin-bottom:20px"></a>
+            </div>
+            <div class="col-md-3 cont-juego">
+                <h2>Deportes</h2>
+                <p>Fifa 18</p>
+                <a href="game.html"><img src="img/juegos/fifa18.jpg" style="width: 100%; margin-bottom:20px"></a>
+            </div>
+            <div class="col-md-3 cont-juego">
+                <h2>Supervivencia</h2>
+                <p>Farcry 4</p>
+                <a href="game.html"><img src="img/juegos/farcry4.jpg" style="width: 100%; margin-bottom:20px"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="novedades" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Últimas Novedades</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="z_7Gz_RFLnE" class="item-nov item-active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/miniaturas/fifatrailer.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <h2>Fifa 18 Gameplay Trailer | The World's Game</h2>
+                            <p>Available September 29, 2017. Powered by Frostbite™, EA SPORTS™ FIFA 18 blurs the line
+                                between the virtual and real worlds, bringing...</p>
+                        </div>
                     </div>
-
-                </div><!--/.navbar-collapse -->
+                </div>
+                <div id="QkkoHAzjnUs" class="item-nov">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/miniaturas/gta5trailer.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <h2>Grand Theft Auto V Trailer</h2>
+                            <p>Out now for PlayStation4, Xbox One, PlayStation3, Xbox 360, and PC. A bold new direction
+                                in open-world freedom, storytelling, missions...</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="D4Q_XYVescc" class="item-nov">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/miniaturas/codtrailer.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <h2>Official Call of Duty®: WWII Reveal Trailer</h2>
+                            <p>
+                                Over two years in the making, Sledgehammer Games delivers a gritty, personal experience
+                                in the setting of the largest worldwide conflict...</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-        <div id="cabeId" class="cabecera">
-            <div class="cabecera-cont">
-                Para Vosotros Jugadores
-                <p>- El Portal de Videojuegos -</p>
+            <div class="col-md-6">
+                <div class="video-responsive">
+                    <iframe id="yt-video" src="https://www.youtube.com/embed/z_7Gz_RFLnE" frameborder="0"
+                            allowfullscreen="allowfullscreen"></iframe>
+                </div>
+                <a href="game.html">
+                    <div style="margin-top: 20px" class="button-gf">Ver Juego</div>
+                </a>
             </div>
         </div>
-        <div class="noticias">
-            <div class="container">
-                <ul id="webTicker">
-                    <li><span class="njuego">Nuevo Juego</span>This List Item will scroll infintely</li>
-                    <li><span class="trucos">Truco!</span>And this one will follow it</li>
-                    <li><span class="sabias">Sabias Que</span>Finally when it goes out of screen, it will queue again at the end</li>
-                </ul>
-                <div class="noticias-title">
-                    Last Minute <span class="glyphicon glyphicon-fire"></span>
+    </div>
+</div>
+<div id="buscador" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Buscador</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input class="input-text" placeholder="Criterio de Búsqueda..." type="text">
+            </div>
+            <div class="col-md-3">
+                <select class="input-select">
+                    <option value="cat">--Categoría--</option>
+                    <option value="ac">Acción</option>
+                    <option value="de">Deportes</option>
+                    <option value="ca">Carreras</option>
+                    <option value="es">Estrategia</option>
+                    <option value="su">Supervivencia</option>
+                    <option value="ba">Baile</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="input-select">
+                    <option value="cat">--Consola--</option>
+                    <option value="ac">PS 4</option>
+                    <option value="de">PC</option>
+                    <option value="es">PS 3</option>
+                    <option value="su">Wii</option>
+                    <option value="ba">XBox One</option>
+                </select>
+            </div>
+        </div>
+        <div id="btn-search" class="button-gf"><span class="glyphicon glyphicon-search"></span>Encontrar Juegos</div>
+        <div class="panel-recomendados">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2><span class="glyphicon glyphicon-time"></span> Últimas Búsquedas</h2>
+                    <ol type="1">
+                        <li><a href="game.html">Lorem ipsum dolor</a></li>
+                        <li><a href="game.html">Consectetur adipiscing</a></li>
+                        <li><a href="game.html">Aliquam elementum</a></li>
+                        <li><a href="game.html">Pellentesque vestibulum</a></li>
+                        <li><a href="game.html">Mauris elementum</a></li>
+                        <li><a href="game.html">Donec</a></li>
+                        <li><a href="game.html">Curabitur sit</a></li>
+                        <li><a href="game.html">Nulla facilisi</a></li>
+                        <li><a href="game.html">Quisque luctus</a></li>
+                        <li><a href="game.html">Duis at turpis feugiat</a></li>
+                    </ol>
+                </div>
+                <div class="col-md-4">
+                    <h2><span class="glyphicon glyphicon-eye-open"></span> Más Buscados</h2>
+                    <ol type="1">
+                        <li><a href="game.html">Lorem ipsum dolor</a></li>
+                        <li><a href="game.html">Consectetur adipiscing</a></li>
+                        <li><a href="game.html">Aliquam elementum</a></li>
+                        <li><a href="game.html">Pellentesque vestibulum</a></li>
+                        <li><a href="game.html">Mauris elementum</a></li>
+                        <li><a href="game.html">Donec</a></li>
+                        <li><a href="game.html">Curabitur sit</a></li>
+                        <li><a href="game.html">Nulla facilisi</a></li>
+                        <li><a href="game.html">Quisque luctus</a></li>
+                        <li><a href="game.html">Duis at turpis feugiat</a></li>
+                    </ol>
+                </div>
+                <div class="col-md-4">
+                    <ol type="1">
+                        <h2><span class="glyphicon glyphicon-heart-empty"></span> Mejor Valorados</h2>
+                        <li><a href="game.html">Lorem ipsum dolor</a></li>
+                        <li><a href="game.html">Consectetur adipiscing</a></li>
+                        <li><a href="game.html">Aliquam elementum</a></li>
+                        <li><a href="game.html">Pellentesque vestibulum</a></li>
+                        <li><a href="game.html">Mauris elementum</a></li>
+                        <li><a href="game.html">Donec</a></li>
+                        <li><a href="game.html">Curabitur sit</a></li>
+                        <li><a href="game.html">Nulla facilisi</a></li>
+                        <li><a href="game.html">Quisque luctus</a></li>
+                        <li><a href="game.html">Duis at turpis feugiat</a></li>
+                    </ol>
                 </div>
             </div>
         </div>
-
-        <div id="top-juegos" class="section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Top Juegos</h2>
-                </div>
+        <div style="display:none" class="panel-resultados">
+            <div class="row">
+                    <div class="col-md-3">
+                        <a href="game.html"><div class="panel juego-busqueda hvr-float-shadow">
+                            <img src="img/juegos/batAc.jpg">
+                            <h2>Battlefield 4</h2>
+                            <p>PS 4 | Acción</p>
+                            <p>Disponible por: <span>45.99 €</span></p>
+                        </div></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="game.html"><div class="panel juego-busqueda hvr-float-shadow">
+                            <img src="img/juegos/nbaAc.jpg">
+                            <h2>NBA 2k17</h2>
+                            <p>PS 4 | Deportes</p>
+                            <p>Disponible por: <span>15.99 €</span></p>
+                        </div></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="game.html"><div class="panel juego-busqueda hvr-float-shadow">
+                            <img src="img/juegos/justAc.jpg">
+                            <h2>Just Dance 2017</h2>
+                            <p>PS 4 | Baile</p>
+                            <p>Disponible por: <span>22.95 €</span></p>
+                        </div></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="game.html"><div class="panel juego-busqueda hvr-float-shadow">
+                            <img src="img/juegos/nfsAc.jpg">
+                            <h2>Need For Speed</h2>
+                            <p>PS 4 | Carreras</p>
+                            <p>Disponible por: <span>25.95 €</span></p>
+                        </div></a>
+                    </div>
+            </div>
                 <div class="row">
-                    <div class="col-md-3 cont-juego">
-                        <h2>Acción</h2>
-                        <p>GTA V</p>
-                        <a href="game.html"><img src="img/juegos/gta5.jpg" style="width: 100%; margin-bottom:20px"></a>
-                    </div>  
-                    <div class="col-md-3 cont-juego">
-                        <h2>Carreras</h2>
-                        <p>Dirt Rally</p>
-                        <a href="game.html"><img src="img/juegos/dirt.jpg" style="width: 100%; margin-bottom:20px"></a>
-                    </div> 
-                    <div class="col-md-3 cont-juego">
-                        <h2>Deportes</h2>
-                        <p>Fifa 18</p>
-                        <a href="game.html"><img src="img/juegos/fifa18.jpg" style="width: 100%; margin-bottom:20px"></a>
-                    </div> 
-                    <div class="col-md-3 cont-juego">
-                        <h2>Supervivencia</h2>
-                        <p>Farcry 4</p>
-                        <a href="game.html"><img src="img/juegos/farcry4.jpg" style="width: 100%; margin-bottom:20px"></a>
-                    </div> 
-                </div>
-            </div>
-        </div>
-        <div id="novedades" class="section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Últimas Novedades</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div id="z_7Gz_RFLnE" class="item-nov item-active">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="img/miniaturas/fifatrailer.jpg">
-                                </div>
-                                <div class="col-md-8">
-                                    <h2>Fifa 18 Gameplay Trailer | The World's Game</h2>
-                                    <p>Available September 29, 2017. Powered by Frostbite™, EA SPORTS™ FIFA 18 blurs the line between the virtual and real worlds, bringing...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="QkkoHAzjnUs" class="item-nov">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="img/miniaturas/gta5trailer.jpg">
-                                </div>
-                                <div class="col-md-8">
-                                    <h2>Grand Theft Auto V Trailer</h2>
-                                    <p>Out now for PlayStation4, Xbox One, PlayStation3, Xbox 360, and PC. A bold new direction in open-world freedom, storytelling, missions...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="D4Q_XYVescc" class="item-nov">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="img/miniaturas/codtrailer.jpg">
-                                </div>
-                                <div class="col-md-8">
-                                    <h2>Official Call of Duty®: WWII Reveal Trailer</h2>
-                                    <p>
-                                        Over two years in the making, Sledgehammer Games delivers a gritty, personal experience in the setting of the largest worldwide conflict...</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-3">
+                        <a href="game.html"><div class="panel juego-busqueda hvr-float-shadow">
+                            <img src="img/juegos/unAc.jpg">
+                            <h2>Uncharted 4</h2>
+                            <p>PS 4 | Acción</p>
+                            <p>Disponible por: <span>49.99 €</span></p>
+                        </div></a>
                     </div>
-                    <div class="col-md-6">
-                        <div class="video-responsive">
-                            <iframe id="yt-video"  src="https://www.youtube.com/embed/z_7Gz_RFLnE" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                        </div>
-                        <a href="game.html"><div style="margin-top: 20px" class="button-gf">Ver Juego</div></a>
+                    <div class="col-md-3">
+                        <a href="game.html"><div class="panel juego-busqueda hvr-float-shadow">
+                            <img src="img/juegos/lastAc.jpg">
+                            <h2>Last Of Us</h2>
+                            <p>PS 4 | Acción</p>
+                            <p>Disponible por: <span>29.99 €</span></p>
+                        </div></a>
                     </div>
-                </div>
             </div>
         </div>
-        <div id="buscador" class="section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Buscador</h2>
-                </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pharetra orci tincidunt vehicula efficitur. Aenean vestibulum suscipit dapibus. Aliquam placerat id justo et maximus. Nam pharetra convallis magna, vel tempor velit consectetur nec. Integer eget mauris tincidunt, viverra ipsum in, efficitur massa. Duis in facilisis est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec arcu mi, placerat a urna in, dictum porttitor risus. Etiam vitae lectus quis turpis congue feugiat eu vitae ligula. Etiam at rhoncus elit, blandit maximus turpis.
-
-                    Curabitur feugiat urna id purus maximus efficitur. Nulla a elementum est. Suspendisse iaculis mollis sem a congue. Ut rutrum mollis risus, vel feugiat leo vehicula a. Nam aliquam, nisl non convallis commodo, nibh metus sagittis dui, ut placerat nibh nibh id sapien. Phasellus sodales quam diam, aliquet bibendum tortor interdum maximus. Nulla facilisis leo id urna varius ultrices. Duis vitae ultricies lectus. Duis vel efficitur magna. Suspendisse potenti. Vestibulum vel maximus dolor. Nullam quis sapien vehicula, aliquam quam eu, pulvinar nulla. Phasellus interdum neque nec volutpat scelerisque. Quisque sit amet ipsum vel urna viverra scelerisque ac imperdiet neque. Duis ultricies, turpis a lobortis faucibus, purus libero lobortis nulla, quis tempor nulla lacus at dui.
-
-                    In in libero eu augue facilisis dapibus. Suspendisse vel eros convallis, convallis dui a, cursus nisl. Nunc sed efficitur enim. Aenean odio tellus, fermentum pulvinar diam ac, porta faucibus nisl. Quisque ornare commodo leo, non euismod nisi viverra vitae. Cras id malesuada nisi. Sed at odio non ipsum mollis mattis a quis turpis. Fusce mollis justo sit amet enim aliquet, eget pretium lectus lobortis. Praesent nisl mi, condimentum vitae magna ut, imperdiet interdum tellus. Morbi quis nisl ac lorem pulvinar rhoncus. Pellentesque vitae varius orci. Aenean aliquam purus a molestie eleifend.
-
-                    Nullam sed justo vehicula urna rhoncus gravida ac in dui. Nulla elementum velit a risus tempor, vitae auctor diam ornare. Sed at nisl in magna laoreet tincidunt in eget arcu. Integer sit amet augue eget mi hendrerit sollicitudin vitae vel est. Quisque ut metus id orci blandit placerat. Ut in tortor et lacus aliquam cursus. Donec porta arcu est, et iaculis est consequat a. Integer pharetra eu nulla at accumsan. Sed facilisis erat non metus imperdiet feugiat.
-
-                    Suspendisse sed arcu ornare, volutpat purus sed, venenatis nibh. Nullam vel luctus risus, eu vestibulum metus. Pellentesque luctus risus vitae vestibulum fringilla. Aenean at justo augue. Donec commodo ipsum lectus, eu pharetra justo tincidunt quis. Suspendisse potenti. Cras ornare convallis arcu et ultricies.
-
-                    Suspendisse pellentesque sapien sit amet mauris tristique, vitae vehicula sem congue. Maecenas posuere consectetur risus et pulvinar. Nam nibh urna, gravida non convallis non, iaculis non dolor. Ut metus nibh, condimentum non porttitor a, sollicitudin ultrices est. Fusce venenatis turpis eu tellus iaculis, in euismod neque efficitur. Nunc maximus diam ac tellus maximus imperdiet. Nunc lobortis pharetra magna, vestibulum faucibus ex efficitur aliquet. Suspendisse pharetra sodales arcu id rutrum. Duis lacinia tellus lectus, non auctor mauris convallis a.
-
-                    Mauris metus leo, pulvinar ac lorem sit amet, tempus luctus eros. Nulla ut ipsum ut arcu dignissim pretium. Curabitur non purus convallis, maximus massa dapibus, volutpat diam. Pellentesque odio quam, vulputate nec feugiat et, finibus et massa. Nullam interdum risus lacus, a pellentesque eros blandit vitae. Fusce sed libero eget nunc dictum suscipit. Aenean tincidunt lectus neque. Vestibulum convallis varius varius. Nam ultrices dictum pharetra. Aenean luctus elit erat, at suscipit lacus eleifend nec. Sed dignissim, est sed congue dictum, quam arcu iaculis est, quis aliquet diam elit vel sem. Mauris scelerisque cursus dui consectetur iaculis. Ut interdum blandit pulvinar. Donec non tempor augue, ut dictum libero. Nulla ornare ligula quis metus rutrum hendrerit sed sed nunc. Donec nec elit porttitor, cursus eros ut, hendrerit mi.
-
-                    Morbi ac ex at eros mollis laoreet. Vestibulum mauris leo, accumsan non malesuada id, luctus sit amet nunc. Proin laoreet ornare erat, in fringilla elit lobortis ut. Nullam at velit at ex fringilla commodo. Sed eget risus augue. Maecenas bibendum libero eget ex volutpat congue. Fusce feugiat dui non euismod dapibus. Praesent lacinia velit consectetur fermentum auctor.
-
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque nibh nisi, maximus sit amet mollis at, imperdiet vel quam. Aliquam dapibus nibh arcu, nec suscipit urna euismod id. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec cursus ex non quam ullamcorper lobortis. Vivamus vel tortor lectus. Donec finibus elit dui, sit amet porta elit aliquam euismod.
-
-                    Nullam ante nisl, rhoncus sed odio ac, blandit iaculis felis. Duis ante eros, imperdiet eget dictum non, porta eget mi. Pellentesque mollis, libero ac rutrum vehicula, tellus lacus viverra orci, et laoreet magna dui non massa. Cras lectus nisl, ornare et dignissim quis, sodales a ex. Pellentesque augue ipsum, convallis et ligula in, dapibus imperdiet massa. Nullam quis dolor sagittis, faucibus est at, finibus quam. Integer id risus auctor, facilisis neque vel, commodo dui. Curabitur vel ipsum non tellus viverra vestibulum sed eget mauris. Integer euismod placerat dolor, pulvinar pretium diam. Vestibulum convallis pretium risus, rhoncus ultrices nisl gravida ut.
-                </p>
-            </div>
-        </div>
-    </body>
-    <script src="https://www.ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/xtra/jquery.webticker.min.js"></script>
-    <script src="js/scripts.js"></script>
+    </div>
+</div>
+</div>
+</body>
+<script src="https://www.ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/xtra/jquery.webticker.min.js"></script>
+<script src="js/scripts.js"></script>
 
 </html>

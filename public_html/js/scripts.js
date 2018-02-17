@@ -26,8 +26,19 @@ $(document).ready(function () {
     });
     //WEB TICKER
     $('#webTicker').webTicker({duplicate: true, height: '40px'});
+    //SEARCH
+    $('#btn-search').on('click', function (e) { //Smooth scrolling
+        e.preventDefault();
+        $('.panel-recomendados').fadeOut(500);
+        $('.panel-resultados').fadeIn(1000);
+    });
     //NAVBAR RESIZE
-    var altura = $('.noticias').offset().top;
+    var altura;
+    if($('.noticias').length == 0){
+        altura = $('.cabecera-small').offset().top;
+    }else{
+        altura = $('.noticias').offset().top;
+    }
     $(window).on('scroll', function () {
         if ($(window).scrollTop() > altura) {
             $('.navbar').css("padding", "0px 0px");
