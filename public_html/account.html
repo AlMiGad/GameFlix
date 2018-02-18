@@ -13,7 +13,7 @@
     <title>Mi Cuenta | GameFlix</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -163,6 +163,59 @@
                         <div class="col-md-3">
                             <a class="hvr-float-shadow" href="game.html"><img src="img/juegos/unAc.jpg"></a>
                             <p>Disponible por: <span>45.99 €</span></p>
+                            <div id="valorar" style="margin-top: 10px" class="button-gf-small"><span class="glyphicon glyphicon-thumbs-up"></span> Valorar</div>
+                            <div class="lightbox" id="valoracion">
+                                <div class="panel-valoracion">
+                                    <h2 style="margin-bottom: 20px">¿Que te ha parecido?</h2>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <select class="input-select input-select-val">
+                                                <option value="cat">--Valoración--</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                            <select class="input-select input-select-val">
+                                                <option value="cat">--Jugabilidad--</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select class="input-select input-select-val">
+                                                <option value="cat">--Originalidad--</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                            <select class="input-select input-select-val">
+                                                <option value="cat">--Dificultad--</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <input class="input-text input-text-val" placeholder="Comentarios..." type="text">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div id="enviar-val" style="margin-top: 10px" class="button-gf-small"><span class="glyphicon glyphicon-send"></span> Enviar</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div id="cerrar-val" style="margin-top: 10px" class="button-gf-small"><span class="glyphicon glyphicon-remove"></span> Cerrar</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>

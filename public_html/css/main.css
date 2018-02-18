@@ -151,11 +151,31 @@ a:hover{
     margin: 0 auto;
     transition: 0.3s
 }
+.button-gf-small{
+    max-width: 300px;
+    padding: 5px 8px 8px 8px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #544F83;
+    font-family: 'Play-Bold', sans-serif;
+    background: #fff;
+    color: #544F83;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0 auto;
+    transition: 0.3s
+}
 .button-gf span{
     top:3px;
     margin-right: 5px;
+    display: inline !important;
 }
-.button-gf:hover, .gf-active{
+.button-gf-small span{
+    top:3px;
+    margin-right: 2px;
+    display: inline !important;
+}
+.button-gf:hover, .gf-active, .button-gf-small:hover{
     background: #544F83;
     color:#fff;
     transition: 0.3s
@@ -313,6 +333,13 @@ a:hover{
     width: 50%;
     margin: 95px auto;
 }
+.panel-valoracion{
+    background-color: white;
+    margin: 100px auto 0 auto;
+    padding: 20px;
+    max-width: 560px;
+    width: 100%;
+}
 .video-responsive {
 position: relative;
 padding-bottom: 56.25%; /* 16/9 ratio */
@@ -466,6 +493,15 @@ height: 100%;
     }
     #panel-cuenta, #juegos-comprados, #demos-disponibles, #demos-usadas{
         margin-top:20px;
+    }
+    .panel-valoracion{
+        background-color: white;
+        margin: 72px 5% 0 5%;
+        width: auto;
+    }
+    .input-select-val, .input-text-val{
+        padding: 2px 15px;
+        font-size: 19px;
     }
 }
 

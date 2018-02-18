@@ -38,6 +38,21 @@ $(document).ready(function () {
         $('.panel-recomendados').fadeOut(500);
         $('.panel-resultados').fadeIn(1000);
     });
+    //RATE
+    $('#valorar').on('click', function (e) { //Smooth scrolling
+        e.preventDefault();
+        $('#valoracion').show();
+    });
+    $('#enviar-val').on('click', function (e) { //Smooth scrolling
+        e.preventDefault();
+        alert("Gracias por tus Comentarios");
+        $('#valoracion').hide();
+        $('#valorar').hide();
+    });
+    $('#cerrar-val').on('click', function (e) { //Smooth scrolling
+        e.preventDefault();
+        $('#valoracion').hide();
+    });
     //NAVBAR RESIZE
     var altura;
     if($('.noticias').length == 0){
